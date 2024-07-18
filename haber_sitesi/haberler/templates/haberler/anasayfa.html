@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Haber Sitesi</title>
+</head>
+<body>
+    <h1>Son Haberler</h1>
+    <ul>
+        {% for haber in son_haberler %}
+            <li>{{ haber.baslik }} - {{ haber.yayinlanma_tarihi }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
